@@ -1,0 +1,30 @@
+package days08_varargs;
+
+public class Sum_Varargs {
+
+	public static void main(String[] args) {
+
+
+		 // verilen int lerden ilki haric tum sayilari toplayan ve
+		// buldugunuz toplam ile ilk sayiyi carpip sonucu yazdiriniz.
+		
+		int arr[]={5,2};
+		topla(2,34,12,45,50);
+		topla(3,5,8,23,65,21,47,44,10,16);
+		topla(4,arr);//############array ile uyumlu
+
+	}
+	public static void topla(int carpilacakSayi, int... toplanacakSayilar){
+		int toplam=0;
+
+		for (int each:toplanacakSayilar)
+			  {
+			  	toplam+=each;
+
+		}
+		System.out.println("sonuc :"+carpilacakSayi*toplam);
+	
+
+	}
+
+}
