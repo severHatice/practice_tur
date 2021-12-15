@@ -23,6 +23,7 @@ public class ConcatVarargs {
 		        }                           //w ye gelen h harfi  yeniStr ye yapistirildi
 
 		        System.out.println(yeniStr);
+		        System.out.println("yasasin");
 
 		        
 		    }}
